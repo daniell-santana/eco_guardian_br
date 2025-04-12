@@ -1,0 +1,6 @@
+**/.env
+# Ignorar arquivos de dependências (se já estiverem no requirements.txt)
+venv/
+env/
+# Ignorar arquivos de ambiente
+.env
