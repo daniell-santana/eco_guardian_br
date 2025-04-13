@@ -22,7 +22,7 @@ Automatização completa do ciclo de análise de políticas ambientais com frame
 ---
 
 ## ✨ Destaques Técnicos
-### 🔍 Automação no Processo de Análise e Avaliação da Polític Pública:
+### 🔍 Automação no Processo de Análise e Avaliação da Política Pública:
 - Classificação automática de políticas segundo critérios OCDE:
   - **Relevância**
   - **Efetividade** 
