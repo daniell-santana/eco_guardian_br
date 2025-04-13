@@ -2,7 +2,7 @@
 
 [![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)](https://eco-guardian-1008531514747.us-central1.run.app)
 [![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/r/daniellsantanaa/eco-guardian)
-[![OpenAI](https://img.shields.io/badge/OpenAI-GPT_4o-mini-412991?style=for-the-badge&logo=openai&logoColor=white)]([https://openai.com/](https://platform.openai.com/docs/models/gpt-4o-mini))
+[![OpenAI GPT-4o Mini](https://img.shields.io/badge/OpenAI-GPT_4o_Mini-412991?style=for-the-badge&logo=openai&logoColor=white)](https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/)
 
 ![Dashboard Preview](https://raw.githubusercontent.com/daniell-santana/eco_guardian_br/main/assets/dashboard_preview.png)
 
@@ -11,54 +11,45 @@
 https://eco-guardian-1008531514747.us-central1.run.app
 
 ## 🎯 Objeto do Projeto
-Dashboard interativo para monitoramento ambiental no Brasil com:
-- Análise geoespacial em tempo real
-- **Modelos preditivos para taxa de conversão florestal (todos estados)**
-- IA generativa para análise de políticas públicas
-- Classificação automática de políticas segundo critérios OCDE
+Plataforma integrada de análise ambiental com:
+- Modelos preditivos de conversão florestal para **todos os estados brasileiros**
+- Sistema de avaliação de políticas públicas via **framework OCDE**
+- Integração com [GPT-4o Mini](https://openai.com/index/gpt-4o-mini-advancing-cost-efficient-intelligence/) para processamento de documentos
 
-**Diferencial estratégico:** Sistema pioneiro de avaliação de políticas ambientais com framework OCDE via GPT-4o.
+**Diferencial estratégico:**  
+Automatização completa do ciclo de análise de políticas ambientais com extração estruturada de 6 critérios OCDE.
 
 ---
 
 ## ✨ Destaques Técnicos
-### 🔍 Análise OCDE Automatizada
-- Extração estruturada de 6 critérios-chave da OCDE
-- Detecção de metas, prazos e indicadores quantitativos
-- Geração de relatório executivo com identificação do ente responsável
+### 🔍 Motor de Análise OCDE
+- Classificação automática de políticas segundo critérios internacionais (Relevância, Efetividade, Eficiência, Sustentabilidade, Coerência e Impacto)
+- Detecção de 15+ tipos de dados quantitativos (metas, prazos, orçamentos)
+- Geração de relatórios executivos
 
-### 📈 Modelagem Preditiva
+### 📈 Modelagem Preditiva Avançada
 - Previsão de conversão florestal para 5 anos
 - Modelos Prophet customizados por estado
-- Média harmônica ponderada para agregação municipal->estadual
+- Agregação municipal->estadual via média harmônica ponderada
 
-### 🤖 Pipeline de IA
-- Processamento de PDFs com PDFPlumber
-- Context window de 120k tokens para documentos extensos
-- Temperatura controlada (0.5) para análises balanceadas
-
+### 🗺️ Base Geoespacial
+- Dados territoriais do [IBGE Malhas](https://www.ibge.gov.br/geociencias/organizacao-do-territorio/malhas-territoriais/15774-malhas.html)
+- Camadas dinâmicas de desmatamento (PRODES/INPE)
+- Integração com dados do [Observatório Legal Amazonia](https://legal-amazonia.org/maranhao-politicas-ambientais-do-governo-carlos-brandao/)
+- Dados de Biomas Brasil [MAPBIOMAS](https://brasil.mapbiomas.org/estatisticas/)
 ---
 
-## 📂 Fontes de Dados Principais
-| Dado | Fonte | Resolução |
-|------|-------|-----------|
-| Séries Temporais Florestais | [PRODES/INPE](https://terrabrasilis.dpi.inpe.br/) | Municipal/Anual |
-| Políticas Públicas | [MMA](https://www.gov.br/mma) | Leis/Decretos |
-| Dados Econômicos | [SIDRA/IBGE](https://sidra.ibge.gov.br/) | Municipal |
-| Limites Geográficos | [IBGE](https://www.ibge.gov.br/) | 2023 |
-
----
-
-## 🛠 Arquitetura
+## 🛠 Arquitetura Principal
 ```python
-# Stack Principal
-Python 3.10+
-Streamlit       # Interface web
-Docker          # Containerização
-Prophet         # Modelagem temporal
-OpenAI API      # GPT-4o para análise textual
-GeoPandas       # Processamento geoespacial
+# Stack de Inteligência Artificial
+GPT-4o Mini          # Análise textual (120k tokens)
+PDFPlumber           # Extração de textos
+Prophet              # Séries temporais
+
+# Geo Processamento
+GeoPandas            # Manipulação de shapes
+Folium/Plotly        # Visualização interativa
 
 # Infraestrutura
-Google Cloud Run    # Deploy
-Docker Hub          # Registry (daniellsantanaa/eco-guardian)
+Google Cloud Run     # Deploy
+Docker Hub           # Imagem: daniellsantanaa/eco-guardian
