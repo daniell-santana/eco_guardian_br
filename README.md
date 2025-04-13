@@ -50,7 +50,7 @@ Categoria	Fontes Principais	Exemplo de Uso
 - Séries Temporais:	PRODES/INPE	Modelagem preditiva
 
 ## 🗂 Estrutura do Projeto
-eco_guardian/
+```eco_guardian/
 ├── 📁 data/ # Dados ambientais e econômicos
 │ ├── processed/ # Dados tratados (Parquet)
 │ └── raw/ # Fontes originais (IBGE, PRODES, MapBiomas)
@@ -69,7 +69,7 @@ eco_guardian/
 │
 ├── 📄 Dockerfile # Configuração de container
 ├── 📄 requirements.txt # Dependências Python
-└── 📄 .env # Variáveis de ambiente (API keys)
+└── 📄 .env # Variáveis de ambiente (API keys)```
 **Principais Fluxos:**
 1. `main.py` → Orquestra todos os módulos do dashboard
 2. `data_loader.py` → Centraliza acesso aos dados processados
