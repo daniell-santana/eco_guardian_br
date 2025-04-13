@@ -78,7 +78,6 @@ Categoria	Fontes Principais	Exemplo de Uso
 4. `time_series_model.py` → Gera projeções de desmatamento
 
 > **Nota:** Todos os modelos preditivos estão pré-treinados e armazenados em `saved_models/` (um para cada estado brasileiro)
-> 
 ---
 
 ## 🛠 Arquitetura Principal
