@@ -69,7 +69,8 @@ Categoria	Fontes Principais	Exemplo de Uso
 │
 ├── 📄 Dockerfile # Configuração de container
 ├── 📄 requirements.txt # Dependências Python
-└── 📄 .env # Variáveis de ambiente (API keys)```
+└── 📄 .env # Variáveis de ambiente (API keys)
+
 **Principais Fluxos:**
 1. `main.py` → Orquestra todos os módulos do dashboard
 2. `data_loader.py` → Centraliza acesso aos dados processados
