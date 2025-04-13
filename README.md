@@ -2,7 +2,7 @@
 
 [![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)](https://eco-guardian-1008531514747.us-central1.run.app)
 [![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://hub.docker.com/r/daniellsantanaa/eco-guardian)
-[![OpenAI](https://img.shields.io/badge/OpenAI-GPT_4o-412991?style=for-the-badge&logo=openai&logoColor=white)](https://openai.com/)
+[![OpenAI](https://img.shields.io/badge/OpenAI-GPT_4o-mini-412991?style=for-the-badge&logo=openai&logoColor=white)]([https://openai.com/](https://platform.openai.com/docs/models/gpt-4o-mini))
 
 ![Dashboard Preview](https://raw.githubusercontent.com/daniell-santana/eco_guardian_br/main/assets/dashboard_preview.png)
 
