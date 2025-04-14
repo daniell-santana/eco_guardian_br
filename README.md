@@ -31,7 +31,7 @@ Automatização completa do ciclo de análise de políticas ambientais com frame
   - **Coerência**
   - **Impacto**
 - Detecção de 15+ tipos de dados quantitativos (metas, prazos, orçamentos)
-- Geração de relatórios executivos com identificação do ente responsável
+- Geração de relatórios executivo
 
 ### 📊 Monitoramento por Bioma
 - Evolução histórica do desmatamento em 6 biomas principais
